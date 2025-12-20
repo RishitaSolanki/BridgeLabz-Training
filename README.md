@@ -1,4 +1,32 @@
 # BridgeLabz-Training
+| Field | Description |
+|------|------------|
+| Repository Name | BridgeLabz-Training |
+| Training Program | BridgeLabz  |
+| Language | C# |
+| Framework | .NET |
+| Main Repository | [BridgeLabz-Training](https://github.com/RishitaSolanki/BridgeLabz-Training) |
+| Core C# Folder | [core-csharp-practice](https://github.com/RishitaSolanki/BridgeLabz-Training/tree/core-csharp-practice) |
+
+#📂 Repository Structure
+
+| Folder Name | Description | Link |
+|------------|------------|------|
+| gcr-codebase | Guided Code Review based Core C# programs | [Open](https://github.com/RishitaSolanki/BridgeLabz-Training/tree/core-csharp-practice/core-cshrap-practice/gcr-codebase) |
+| leet-code-codebase | Logic & algorithm problems (LeetCode style) | [Open](https://github.com/RishitaSolanki/BridgeLabz-Training/tree/core-csharp-practice/core-cshrap-practice/leet-code-codebase) |
+| scenario-based | Real-world scenario-based C# programs | [Open](https://github.com/RishitaSolanki/BridgeLabz-Training/tree/core-csharp-practice/core-cshrap-practice/leet-code-codebase) |
+
+#🎯 Learning Objectives
+
+ Objectives 
+->Strengthen Core C# fundamentals 
+-> Improve logical problem-solving 
+->Practice object-oriented programming 
+->Prepare for technical interviews 
+
+
+
+
 DAY 1:- 
 date-16/12/25(Tuesday)
 Topic-Basic Understanding of Github and Repository
@@ -30,5 +58,16 @@ Topic-Understanding of CLR architecture and learn Dataype ,variable ,operator in
 4. learn about operator in C#
 5. based on learning solve 2 assignment(level1,leve2) and solve 2 leetcode question
 
+
+
+
+
+
+
+#👤 Maintained by
+
+| Name |
+|------|
+|Rishita Solanki |
 
 
