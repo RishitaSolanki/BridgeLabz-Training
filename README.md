@@ -1,4 +1,5 @@
 # BridgeLabz-Training
+# Field and Description
 | Field | Description |
 |------|------------|
 | Repository Name | BridgeLabz-Training |
@@ -18,11 +19,12 @@
 
 #🎯 Learning Objectives
 
- Objectives 
-->Strengthen Core C# fundamentals 
--> Improve logical problem-solving 
-->Practice object-oriented programming 
-->Prepare for technical interviews 
+| Objective |
+|----------|
+| Strengthen Core C# fundamentals |
+| Improve logical problem-solving |
+| Practice object-oriented programming |
+| Prepare for technical interviews |
 
 
 
