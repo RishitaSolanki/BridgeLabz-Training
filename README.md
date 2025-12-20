@@ -15,11 +15,20 @@ Topic- Deep Dive into github
 
 DAY 3:-
 date-18/12/25(Thrusday)
-Topic:-Basic Understanding of Dotnet and C#
+Topic-Basic Understanding of Dotnet and C#
 1. Installation of dotnet and setting up IDE
 2. learn about .net CLR architecture with the understanding of MSIL and JIT
 3. learn Basic Syntax and variable of C#
 4. Solve 10 Basic question of C# and 2 leetcode question
+
+DAY 4:-
+date-19/12/25(Friday)
+Topic-Understanding of CLR architecture and learn Dataype ,variable ,operator in C#
+1. Deep understanding  of .net CLR architecture
+2. learn about access modifier of C#
+3. learn about datatype and variable and naming convention in C#
+4. learn about operator in C#
+5. based on learning solve 2 assignment(level1,leve2) and solve 2 leetcode question
 
 
 
