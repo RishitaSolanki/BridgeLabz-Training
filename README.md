@@ -55,11 +55,23 @@ DAY 4:-
 date-19/12/25(Friday)
 Topic-Understanding of CLR architecture and learn Dataype ,variable ,operator in C#
 1. Deep understanding  of .net CLR architecture
-2. learn about access modifier of C#
-3. learn about datatype and variable and naming convention in C#
-4. learn about operator in C#
-5. based on learning solve 2 assignment(level1,leve2) and solve 2 leetcode question
+2. learn about datatype and variable and naming convention in C#
+3. learn about operator in C#
+4. based on learning solve 2 assignment(level1,leve2) and solve 2 leetcode question
 
+DAY 5:-
+date-20/12/25(Saturday)
+1. learn about Access Modifier
+2. Solve one question where we use 6 type of access modifier
+3. solve 2 leetcode question
+
+DAY 6:-
+date-22/12/25( Monday)
+Topic-learn about Control Flows in C#
+1. lean about C# control flows(if,else,elseif,while,for,switch)
+2. solve assignment based on that learning
+3. Instaling and learn about Visual studio
+4. solve 2 leet code solution
 
 
 
