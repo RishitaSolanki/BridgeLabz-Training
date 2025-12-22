@@ -9,7 +9,7 @@
 	
 	double Volume= 3.14f*r*r*h;
 	
-	Console.WriteLine("Area of a circle=" + Volume);
+	Console.WriteLine("Volume of a cylinder=" + Volume);
 			
 
 		

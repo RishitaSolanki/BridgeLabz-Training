@@ -13,6 +13,7 @@
         double t = Convert.ToDouble(Console.ReadLine());
 
         // Simple Interest calculation
+		//Simple Interest = (Principal * Rate * Time) / 100
         double simpleInterest = (p * r * t) / 100;
 
         Console.WriteLine("The Simple Interest is " + simpleInterest +    " for Principal " + p +

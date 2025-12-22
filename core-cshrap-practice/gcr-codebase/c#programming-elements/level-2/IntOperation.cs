@@ -26,22 +26,8 @@
 	  
 	  int operation4=a % b + c;
 	  
-	  Console.WriteLine("The results of Int Operations are " + operation1 + "," + operation2 + "," + operation3 + " and " + operation4 );
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+	  Console.WriteLine("The results of Int Operations are " + operation1 + "," + operation2 + "," 
+	  + operation3 + " and " + operation4 );
   
   }
   }

@@ -3,7 +3,8 @@
     public class MaxNumberOfPossibleHandshakes{
 	
 	 public static void Main(string[] args){
-	
+		 
+	//taking input from user for  no. of students and no. of handshakes
 		Console.WriteLine("Enter Number of Students : ");
 		
 		int NoOfStudents = Convert.ToInt32(Console.ReadLine());

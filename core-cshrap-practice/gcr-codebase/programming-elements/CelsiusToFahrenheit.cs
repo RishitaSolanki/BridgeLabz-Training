@@ -1,4 +1,5 @@
 using System;
+
 public class CelsiusToFahrenheit {
 
 	public static void Main(String[] args) {
