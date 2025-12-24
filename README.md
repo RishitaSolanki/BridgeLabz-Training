@@ -68,11 +68,27 @@ date-20/12/25(Saturday)
 DAY 6:-
 date-22/12/25( Monday)
 Topic-learn about Control Flows in C#
-1. lean about C# control flows(if,else,elseif,while,for,switch)
+1. learn about C# control flows(if,else,elseif,while,for,switch)
 2. solve assignment based on that learning
-3. Instaling and learn about Visual studio
+3. Installing and learn about Visual studio
 4. solve 2 leet code solution
 
+DAY 7:-
+date-23/12/25(Tuesday)
+Topic-learn about Arrays in C#
+1. learn about C# arrays(What is an array, how it work, how it take input etc)
+2. solve assignment based on that learning
+3. solve assignment on visual code from today
+4. solve 1 leetcode question
+
+DAY 8:-
+date-24/12/25(Wednesday)
+Topic-learn about Methods in C#
+1. submit the array assignment(level 1 and level 2)
+2. learn about the C# methods (How to make method and how to call method)
+3. based on learning solve assignment
+
+   
 
 
 
