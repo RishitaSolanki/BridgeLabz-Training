@@ -35,14 +35,14 @@ Topic-Basic Understanding of Github and Repository
 1. Training Kick Of Session
 2. Basic Understanding of github
 3. Create Repositary and Branches
-4. Solve Two Basic Java question
+4. Solved Two Basic Java question
 
 
 DAY 2:-
 date-17/12/25(Wednesday)
 Topic- Deep Dive into github 
 1. Learn about github
-2. Solve Basic question
+2. Solved Basic question
 
 
 DAY 3:-
@@ -51,7 +51,7 @@ Topic-Basic Understanding of Dotnet and C#
 1. Installation of dotnet and setting up IDE
 2. learn about .net CLR architecture with the understanding of MSIL and JIT
 3. learn Basic Syntax and variable of C#
-4. Solve 10 Basic question of C# and 2 leetcode question
+4. Solved 10 Basic question of C# and 2 leetcode question
 
 
 DAY 4:-
@@ -66,26 +66,26 @@ Topic-Understanding of CLR architecture and learn Dataype ,variable ,operator in
 DAY 5:-
 date-20/12/25(Saturday)
 1. learn about Access Modifier
-2. Solve one question where we use 6 type of access modifier
-3. solve 2 leetcode question
+2. Solved one question where we use 6 type of access modifier
+3. solved 2 leetcode question
 
 
 DAY 6:-
 date-22/12/25( Monday)
 Topic-learn about Control Flows in C#
 1. learn about C# control flows(if,else,elseif,while,for,switch)
-2. solve assignment based on that learning
+2. solved assignment based on that learning
 3. Installing and learn about Visual studio
-4. solve 2 leet code solution
+4. solved 2 leet code solution
 
 
 DAY 7:-
 date-23/12/25(Tuesday)
 Topic-learn about Arrays in C#
 1. learn about C# arrays(What is an array, how it work, how it take input etc)
-2. solve assignment based on that learning
-3. solve assignment on visual code from today
-4. solve 1 leetcode question
+2. solved assignment based on that learning
+3. solved assignment on visual code from today
+4. solved 1 leetcode question
 
 
 DAY 8:-
@@ -102,7 +102,7 @@ Topic-learn about Strings in C#
 1. learn about C# Strings and string creation and escapw sequences
 2. learn about string class built-in methods
 3. based on learning solve assignment
-4. solve 1 leetcode question
+4. solved 1 leetcode question
 5. solved 1 scenario based question(snake and ladder)
 
    
