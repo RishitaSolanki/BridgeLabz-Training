@@ -24,10 +24,9 @@ namespace ScenarioBased.EmployeeWageComputation
             while (true)
             {
                 Console.WriteLine("Employee Wage Computation Menu");
-                Console.WriteLine("1. UC1 - Check Attendance");
-                Console.WriteLine("2. UC2 - Calculate Daily Wage");
-                Console.WriteLine("3. UC2 - Calculate Part Time Wage");
-                Console.WriteLine("4. Exit");
+                Console.WriteLine("1. Display Employee");
+                Console.WriteLine("2. Calculate Daily Wage");
+                Console.WriteLine("3. Exit");
                 Console.Write("What you want to see:  ");
 
                 int select = Convert.ToInt32(Console.ReadLine());
@@ -35,7 +34,6 @@ namespace ScenarioBased.EmployeeWageComputation
                 switch (select)
                 {
                     case 1:
-                        employeeService.CheckAttendance();
                         employeeService.DisplayEmployees();
                         break;
 
@@ -45,11 +43,6 @@ namespace ScenarioBased.EmployeeWageComputation
                         break;
 
                     case 3:
-                        employeeService.CalculatePartTime();
-                        employeeService.DisplayEmployees();
-                        break;
-
-                    case 4:
                         Console.WriteLine("Ok Thankyou!..");
                         return;
 

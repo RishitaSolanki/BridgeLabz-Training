@@ -22,7 +22,7 @@ namespace ScenarioBased.EmployeeWageComputation
 
         public override string ToString()
         {
-            return $"Employee {EmployeeId} | Present: {IsPresent} | Daily Wage: {DailyWage}";
+            return $"Employee {EmployeeId} | Present: {IsPresent} | Daily Wage: {DailyWage} ";
         }
     }
 }

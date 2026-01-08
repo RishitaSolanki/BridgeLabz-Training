@@ -1,25 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ScenarioBased.EmployeeWageComputation
 {
-
     public class EmployeeImpl : IEmployee
     {
         private Employee[] employees = new Employee[15];
-
         private int count = 0;
 
         private Random random = new Random();
 
         private const int Wage_Per_Hour = 20;
-
         private const int Full_Day_Hour = 8;
-
         private const int Part_Time_Hour = 4;
-
-
 
 
         public void AddEmployee(Employee emp)
@@ -34,50 +26,41 @@ namespace ScenarioBased.EmployeeWageComputation
             }
         }
 
-      //UC1  
-        public void CheckAttendance()
-        {
-            for (int i = 0; i < count; i++)
-            {
-                employees[i].IsPresent = random.Next(0, 2) == 1;
-
-                if (employees[i].IsPresent)
-                {
-                    employees[i].IsPartTime = random.Next(0, 2) == 1;
-                }
 
 
-            }
-        }
 
-        //UC2
+        // UC1 + UC2 + UC3 combined using switch case
         public void CalculateDailyWage()
         {
             for (int i = 0; i < count; i++)
             {
-                if (employees[i].IsPresent)
+                // 0 = Absent, 1 = Full Time, 2 = Part Time
+                int employeCheck = random.Next(0, 3);
+
+                switch (employeCheck)
                 {
-                    employees[i].DailyWage = Wage_Per_Hour * Full_Day_Hour;
+                    case 1:
+                        
+                        employees[i].IsPresent = true;
+                        employees[i].IsPartTime = false;
+                        Console.WriteLine("Full Time ");
+                        employees[i].DailyWage = Wage_Per_Hour * Full_Day_Hour;
+                        break;
+
+                    case 2:
+                        
+                        employees[i].IsPresent = true;
+                        employees[i].IsPartTime = true;
+                        Console.WriteLine("Part Time");
+                        employees[i].DailyWage = Wage_Per_Hour * Part_Time_Hour;
+                        break;
+
+                    default: 
+                        employees[i].IsPresent = false;
+                        employees[i].IsPartTime = false;
+                        employees[i].DailyWage = 0;
+                        break;
                 }
-                else
-                {
-                    employees[i].DailyWage = 0;
-                }
-            }
-        }
-        //UC3
-        public void CalculatePartTime()
-        {
-            for (int i = 0; i < count; i++)
-            {
-
-                if (employees[i].IsPresent && employees[i].IsPartTime)
-                {
-
-                    employees[i].CalculatePartTime = Wage_Per_Hour * Part_Time_Hour;
-
-                }
-
             }
         }
 

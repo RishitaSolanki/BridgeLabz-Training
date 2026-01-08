@@ -7,10 +7,8 @@ namespace ScenarioBased.EmployeeWageComputation
 
     public interface IEmployee
     {
-        void AddEmployee(Employee employee);
-        void CheckAttendance();
+        void AddEmployee(Employee emp);
         void CalculateDailyWage();
-        void CalculatePartTime();
         void DisplayEmployees();
     }
 }
