@@ -17,6 +17,9 @@ namespace ScenarioBased.EmployeeWageComputation
 
         private const int Full_Day_Hour = 8;
 
+        private const int Part_Time_Hour = 4;
+
+
 
 
         public void AddEmployee(Employee emp)
@@ -38,7 +41,12 @@ namespace ScenarioBased.EmployeeWageComputation
             {
                 employees[i].IsPresent = random.Next(0, 2) == 1;
 
-                
+                if (employees[i].IsPresent)
+                {
+                    employees[i].IsPartTime = random.Next(0, 2) == 1;
+                }
+
+
             }
         }
 
@@ -57,7 +65,21 @@ namespace ScenarioBased.EmployeeWageComputation
                 }
             }
         }
+        //UC3
+        public void CalculatePartTime()
+        {
+            for (int i = 0; i < count; i++)
+            {
 
+                if (employees[i].IsPresent && employees[i].IsPartTime)
+                {
+
+                    employees[i].CalculatePartTime = Wage_Per_Hour * Part_Time_Hour;
+
+                }
+
+            }
+        }
 
         public void DisplayEmployees()
         {

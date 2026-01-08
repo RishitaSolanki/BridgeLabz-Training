@@ -10,6 +10,10 @@ namespace ScenarioBased.EmployeeWageComputation
         public bool IsPresent { get; set; }
         public int DailyWage { get; set; }
 
+        public bool IsPartTime { get; set; }
+
+        public int CalculatePartTime { get; set; }
+
 
         public Employee(int employeeId)
         {
