@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ScenarioBased.EmployeeWageComputation
+{
+   public class Employee
+    {
+        public int EmployeeId { get; private set; }
+        public bool IsPresent { get; set; }
+
+
+        public Employee(int employeeId)
+        {
+            this.EmployeeId = employeeId;
+        }
+
+        public override string ToString()
+        {
+            return $"Employee {EmployeeId} | Present: {IsPresent} ";
+        }
+    }
+}
