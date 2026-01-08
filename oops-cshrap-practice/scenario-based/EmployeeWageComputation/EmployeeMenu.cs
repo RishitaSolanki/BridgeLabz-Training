@@ -25,7 +25,8 @@ namespace ScenarioBased.EmployeeWageComputation
             {
                 Console.WriteLine("Employee Wage Computation Menu");
                 Console.WriteLine("1. UC1 - Check Attendance");
-                Console.WriteLine("2. Exit");
+                Console.WriteLine("2. UC2 - Calculate Daily Wage");
+                Console.WriteLine("3. Exit");
                 Console.Write("What you want to see:  ");
 
                 int select = Convert.ToInt32(Console.ReadLine());
@@ -38,6 +39,10 @@ namespace ScenarioBased.EmployeeWageComputation
                         break;
 
                     case 2:
+                        employeeService.CalculateDailyWage();
+                        employeeService.DisplayEmployees();
+                        break;
+                    case 3:
                         Console.WriteLine("Ok Thankyou!..");
                         return;
 

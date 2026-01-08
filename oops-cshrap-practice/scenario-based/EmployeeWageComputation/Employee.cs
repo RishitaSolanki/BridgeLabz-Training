@@ -8,6 +8,7 @@ namespace ScenarioBased.EmployeeWageComputation
     {
         public int EmployeeId { get; private set; }
         public bool IsPresent { get; set; }
+        public int DailyWage { get; set; }
 
 
         public Employee(int employeeId)
@@ -17,7 +18,7 @@ namespace ScenarioBased.EmployeeWageComputation
 
         public override string ToString()
         {
-            return $"Employee {EmployeeId} | Present: {IsPresent} ";
+            return $"Employee {EmployeeId} | Present: {IsPresent} | Daily Wage: {DailyWage}";
         }
     }
 }

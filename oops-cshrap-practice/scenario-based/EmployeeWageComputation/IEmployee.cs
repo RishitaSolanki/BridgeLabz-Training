@@ -9,6 +9,8 @@ namespace ScenarioBased.EmployeeWageComputation
     {
         void AddEmployee(Employee employee);
         void CheckAttendance();
+        void CalculateDailyWage();
+
         void DisplayEmployees();
     }
 }

@@ -13,7 +13,11 @@ namespace ScenarioBased.EmployeeWageComputation
 
         private Random random = new Random();
 
-        
+        private const int Wage_Per_Hour = 20;
+
+        private const int Full_Day_Hour = 8;
+
+
 
         public void AddEmployee(Employee emp)
         {
@@ -35,6 +39,22 @@ namespace ScenarioBased.EmployeeWageComputation
                 employees[i].IsPresent = random.Next(0, 2) == 1;
 
                 
+            }
+        }
+
+        //UC2
+        public void CalculateDailyWage()
+        {
+            for (int i = 0; i < count; i++)
+            {
+                if (employees[i].IsPresent)
+                {
+                    employees[i].DailyWage = Wage_Per_Hour * Full_Day_Hour;
+                }
+                else
+                {
+                    employees[i].DailyWage = 0;
+                }
             }
         }
 
