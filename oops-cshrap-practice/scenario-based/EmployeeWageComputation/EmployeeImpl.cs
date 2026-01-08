@@ -1,97 +1,101 @@
-﻿using System;
+﻿
+using ScenarioBased.EmployeeWageComputation;
 
-namespace ScenarioBased.EmployeeWageComputation
+class EmployeeImpl : IEmployee
 {
-    public class EmployeeImpl : IEmployee
+    private Employee[] employees = new Employee[15];
+    private int count = 0;
+    private Random employeeRandom = new Random();
+
+    private const int WagePerHour = 20;
+    private const int FullTimeHours = 8;
+    private const int PartTimeHours = 8;
+
+    private const int MaxWorkingDays = 20;
+    private const int MaxWorkingHours = 100;
+
+    public void AddEmployee(Employee employee)
     {
-        private Employee[] employees = new Employee[15];
-        private int count = 0;
-
-        private Random random = new Random();
-
-        private const int Wage_Per_Hour = 20;
-        private const int Full_Day_Hour = 8;
-        private const int Part_Time_Hour = 4;
-
-
-        public void AddEmployee(Employee emp)
+        if (count < employees.Length)
         {
-            if (count < employees.Length)
-            {
-                employees[count++] = emp;
-            }
-            else
-            {
-                Console.WriteLine("Employee array is full.");
-            }
+            employees[count++] = employee;
         }
-        public void CalculateMonthlyWage()
+    }
+
+    // UC6: Calculate wage till max hours OR max days is reached
+    public void CalculateMonthlyWageWithCondition()
+    {
+        for (int i = 0; i < count; i++)
         {
-            int MonthlyWage = 0;
-            for (int i = 0; i < 20; i++)
+            int totalDays = 0;
+            int totalHours = 0;
+            employees[i].MonthlyWage = 0;
+
+            while (totalDays < MaxWorkingDays && totalHours < MaxWorkingHours)
             {
-                int employe = random.Next(0, 3);
+                totalDays++;
+                // 0-Absent,1-FullTime,2-PartTime
+                int employeeCheck = employeeRandom.Next(0, 3); 
 
-                if (employe == 0)
+                switch (employeeCheck)
                 {
-                    MonthlyWage += 0;
-                }
-                else if (employe == 1)
-                {
-                    MonthlyWage += 80;
-                }
-                else
-                {
-                    MonthlyWage += 160;
-                }
-
-            }
-            Console.Write("Monthly Wage= " + MonthlyWage + " of ");
-
-        }
-
-
-        // UC1 + UC2 + UC3 combined using switch case
-        public void CalculateDailyWage()
-        {
-            for (int i = 0; i < count; i++)
-            {
-                // 0 = Absent, 1 = Full Time, 2 = Part Time
-                int employeCheck = random.Next(0, 3);
-
-                switch (employeCheck)
-                {
-                    case 1:
-                        //Full time
-                        employees[i].IsPresent = true;
-                        employees[i].IsPartTime = false;
-                        Console.WriteLine("Full Time ");
-                        employees[i].DailyWage = Wage_Per_Hour * Full_Day_Hour;
-                        break;
-
-                    case 2:
-                        //Part time
-                        employees[i].IsPresent = true;
-                        employees[i].IsPartTime = true;
-                        Console.WriteLine("Part Time");
-                        employees[i].DailyWage = Wage_Per_Hour * Part_Time_Hour;
-                        break;
-
-                    default: 
+                    case 0: 
                         employees[i].IsPresent = false;
-                        employees[i].IsPartTime = false;
                         employees[i].DailyWage = 0;
                         break;
-                }
-            }
-        }
 
-        public void DisplayEmployees()
-        {
-            for (int i = 0; i < count; i++)
-            {
-                Console.WriteLine(employees[i]);
+                    case 1: 
+                        employees[i].IsPresent = true;
+                        employees[i].IsPartTime = false;
+                        totalHours += FullTimeHours;
+                        employees[i].DailyWage = WagePerHour * FullTimeHours;
+                        break;
+
+                    case 2: 
+                        employees[i].IsPresent = true;
+                        employees[i].IsPartTime = true;
+                        totalHours += PartTimeHours;
+                        employees[i].DailyWage = WagePerHour * PartTimeHours;
+                        break;
+                }
+
+                employees[i].MonthlyWage += employees[i].DailyWage;
+
+                // Stop if hours condition is met
+                if (totalHours >= MaxWorkingHours)
+                {
+                    break;
+                }
             }
         }
     }
+
+    public void DisplayEmployees()
+    {
+        for (int i = 0; i < count; i++)
+        {
+            Console.WriteLine(employees[i]);
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

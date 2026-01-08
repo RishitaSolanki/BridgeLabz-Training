@@ -8,9 +8,7 @@ namespace ScenarioBased.EmployeeWageComputation
     public interface IEmployee
     {
         void AddEmployee(Employee emp);
-        void CalculateDailyWage();
-
-        void CalculateMonthlyWage();
+        void CalculateMonthlyWageWithCondition();
         void DisplayEmployees();
     }
 }
