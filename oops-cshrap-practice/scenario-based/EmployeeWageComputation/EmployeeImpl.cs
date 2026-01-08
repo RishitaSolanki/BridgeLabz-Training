@@ -25,8 +25,30 @@ namespace ScenarioBased.EmployeeWageComputation
                 Console.WriteLine("Employee array is full.");
             }
         }
+        public void CalculateMonthlyWage()
+        {
+            int MonthlyWage = 0;
+            for (int i = 0; i < 20; i++)
+            {
+                int employe = random.Next(0, 3);
 
+                if (employe == 0)
+                {
+                    MonthlyWage += 0;
+                }
+                else if (employe == 1)
+                {
+                    MonthlyWage += 80;
+                }
+                else
+                {
+                    MonthlyWage += 160;
+                }
 
+            }
+            Console.Write("Monthly Wage= " + MonthlyWage + " of ");
+
+        }
 
 
         // UC1 + UC2 + UC3 combined using switch case
@@ -40,7 +62,7 @@ namespace ScenarioBased.EmployeeWageComputation
                 switch (employeCheck)
                 {
                     case 1:
-                        
+                        //Full time
                         employees[i].IsPresent = true;
                         employees[i].IsPartTime = false;
                         Console.WriteLine("Full Time ");
@@ -48,7 +70,7 @@ namespace ScenarioBased.EmployeeWageComputation
                         break;
 
                     case 2:
-                        
+                        //Part time
                         employees[i].IsPresent = true;
                         employees[i].IsPartTime = true;
                         Console.WriteLine("Part Time");
