@@ -161,6 +161,71 @@ DAY 16:-
 date-5/1/26(Monday)
 Topic-deep dive into oops
 1.  Encapsulation, Interface, Abstract Classes, and Polymorphism
+2.  learn about all this topic
+3.  solved assignment based on that learning
+4.  solved scenario based question(Hospital Mangagement system, vechicle rental system)
+
+
+DAY 17:-
+date-6/1/26(Tuesday)
+1. revise all four  pillar of oops
+2. solved scenario based question (Bird Sanctuary system, Customer Service Call Log Manager)
+3. solve leetcode question
+
+
+DAY 18:-
+date-7/1/26(Wednesday)
+Topic-Introduction to Data Structure
+1. learned Data Structure - LinkedList
+2. solved scenario based question using oops(Employee wage Problem)
+3. In this scenario we have write 6 UC and update everytime on github from UC1 to UC6
+4. solved linkedlist assignment and submitted
+5. solve leetcode question
+
+
+DAY 19:-
+date-8/1/26(Thrusday)
+Topic-Stack , Queue and Hashmap
+1. learn data structure - Stack ,Queue ,Hashmap
+2. for strengthing my oops knowledge solve scneario based question(Smart home automation) 
+3. based on data structure learning solved assignment and submitted
+4. having intraction and first meeting with capgemini mentor
+
+
+ DAY 20:-
+ date-9/1/26(Friday)
+ Topic- studied Sorting algorithm
+ 1. learn about sorting(quick sort , bubble sort, merge sort, etc)
+ 2. solved scneario based question using oops(Fitness tracker, atm dispenser logic)
+ 3. learn about solid priniciple
+ 4. based on learning of sorting solved assignment and submitted
+
+
+DAY 21:-
+date-12/1/26(Monday)
+Topic- studied and practiced searching
+1. learn about searching(linear search and binary search)
+2. learn about string builder
+3. solved scneario based question using oops(Custom Furniture Manufacturing,Metal Factory Pipe Cutting,loan buddy)
+4. based on learning of linear search and binary search solved assigment and submitted
+5. solve leetcode question
+
+
+DAY 22:-
+date-13/1/26(Tuesday)
+Topic- algorithm analysis
+1. learn about algorithm analysis (runtime analysis and big O notation)
+2. solved scneario based question using oops(Movie Schedule Manager, Digital Book Shelf)
+3. based on learnig solved assignment and submitted
+
+
+DAY 23:-
+date-14/1/26(Wednesday)
+1. revised oops
+2. revised some topic of dsa
+3. start solving scneario based question which having 18 UC (Address Book Problem)
+
+
 
 
 
