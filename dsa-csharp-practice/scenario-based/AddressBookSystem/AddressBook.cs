@@ -30,7 +30,7 @@ namespace ScenarioBased.AddressBookSystem
             Console.Write("Last Name: ");
             string lastName = Console.ReadLine();
 
-            //UC6 Duplicate Check
+           
             for (int i = 0; i < contactCount; i++)
             {
                 if (contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
@@ -41,7 +41,7 @@ namespace ScenarioBased.AddressBookSystem
                 }
             }
 
-            // If not duplicate → add
+            
             EContact contact = new EContact();
             contact.FirstName = firstName;
             contact.LastName = lastName;
@@ -69,6 +69,46 @@ namespace ScenarioBased.AddressBookSystem
 
             Console.WriteLine("Contact Added Successfully");
         }
+
+        // uc7
+        public void SearchByCity(string city)
+        {
+            bool found = false;
+
+            for (int i = 0; i < contactCount; i++)
+            {
+                if (contacts[i].City.Equals(city, StringComparison.OrdinalIgnoreCase))
+                {
+                    contacts[i].Display();
+                    found = true;
+                }
+            }
+
+            if (!found)
+            {
+                Console.WriteLine("No contact found in this city.");
+            }
+        }
+
+        public void SearchByState(string state)
+        {
+            bool found = false;
+
+            for (int i = 0; i < contactCount; i++)
+            {
+                if (contacts[i].State.Equals(state, StringComparison.OrdinalIgnoreCase))
+                {
+                    contacts[i].Display();
+                    found = true;
+                }
+            }
+
+            if (!found)
+            {
+                Console.WriteLine("No contact found in this state.");
+            }
+        }
+
 
         public void DisplayContacts()
         {

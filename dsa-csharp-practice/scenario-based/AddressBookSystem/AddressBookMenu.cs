@@ -6,108 +6,145 @@ namespace ScenarioBased.AddressBookSystem
 {
     public class AddressBookMenu
     {
+            private AddressBook[] addressBooks = new AddressBook[5];
+            private int bookCount = 0;
 
-         private readonly IAddressBook addressBook;
-
-        private AddressBook[] addressBooks = new AddressBook[10];
-
-        private int bookCount = 0;
-
-
+            
             public void ShowMenu()
             {
-                int option;
+                int choice;
 
                 do
                 {
-                    Console.WriteLine("1. Add Contact");
-
-                    Console.WriteLine("2. Edit Contact");
-
-                    Console.WriteLine("3. Delete Contact");
-
-                    Console.WriteLine("4. Display All Contacts");
-
-                    Console.WriteLine("5. Exit");
+                    Console.WriteLine("--ADDRESS BOOK SYSTEM--");
+                    Console.WriteLine("1. Create Address Book");
+                    Console.WriteLine("2. Select Address Book");
+                    Console.WriteLine("3. Exit");
 
                     Console.Write("Enter choice: ");
-                    option = int.Parse(Console.ReadLine());
+                    choice = int.Parse(Console.ReadLine());
 
-                    switch (option)
+                    switch (choice)
                     {
                         case 1:
-                            addressBook.AddContact();
+                            CreateAddressBook();
                             break;
+
                         case 2:
-                            addressBook.EditContact();
+                            SelectAddressBook();
                             break;
+
                         case 3:
-                            addressBook.DeleteContact();
-                            break;
-                        case 4:
-                            addressBook.DisplayContact();
-                            break;
-                        case 5:
                             Console.WriteLine("Thank you!");
                             break;
+
                         default:
-                            Console.ForegroundColor = ConsoleColor.Red;
                             Console.WriteLine("Invalid choice");
-                            Console.ResetColor();
                             break;
                     }
                 }
-                while (option != 5);
+                while (choice != 3);
             }
-        private void SelectAddressBook()
-        {
-            Console.Write("Enter Address Book Name: ");
-            string name = Console.ReadLine();
 
-            for (int i = 0; i < bookCount; i++)
+            
+            private void CreateAddressBook()
             {
-                if (addressBooks[i].AddressBookName.Equals(name, StringComparison.OrdinalIgnoreCase))
+                if (bookCount >= addressBooks.Length)
                 {
-                    addressBookMenu(addressBooks[i]);
+                    Console.WriteLine("Address Book limit reached");
                     return;
                 }
-            }
 
-            Console.WriteLine("Address Book not found!");
-        }
+                Console.Write("Enter Address Book Name: ");
+                string name = Console.ReadLine();
 
-        private void addressBookMenu(AddressBook book)
-        {
-            int choice;
-
-            do
-            {
-                Console.WriteLine($"Address Book: {book.AddressBookName}");
-                Console.WriteLine("1. Add Contact");
-                Console.WriteLine("2. Display Contacts");
-                Console.WriteLine("3. Back");
-
-                Console.Write("Enter choice: ");
-                choice = int.Parse(Console.ReadLine());
-
-                switch (choice)
+               
+                for (int i = 0; i < bookCount; i++)
                 {
-                    case 1:
-                        book.AddContact();
-                        break;
-                    case 2:
-                        book.DisplayContacts();
-                        break;
-                    case 3:
-                        break;
-                    default:
-                        Console.WriteLine("Invalid choice");
-                        break;
+                    if (addressBooks[i].AddressBookName.Equals(name, StringComparison.OrdinalIgnoreCase))
+                    {
+                        Console.WriteLine("Address Book already exists");
+                        return;
+                    }
                 }
+
+                addressBooks[bookCount] = new AddressBook(name);
+                bookCount++;
+
+                Console.WriteLine("Address Book created successfully");
             }
-            while (choice != 3);
+
+           
+            private void SelectAddressBook()
+            {
+                Console.Write("Enter Address Book Name: ");
+                string name = Console.ReadLine();
+
+                for (int i = 0; i < bookCount; i++)
+                {
+                    if (addressBooks[i].AddressBookName.Equals(name, StringComparison.OrdinalIgnoreCase))
+                    {
+                        addressBookMenu(addressBooks[i]);
+                        return;
+                    }
+                }
+
+                Console.WriteLine("Address Book not found");
+            }
+
+            
+            private void addressBookMenu(AddressBook book)
+            {
+                int choice;
+
+                do
+                {
+                    Console.WriteLine($"\n===== Address Book : {book.AddressBookName} =====");
+                    Console.WriteLine("1. Add Contact");
+                    Console.WriteLine("2. Display All Contacts");
+                    Console.WriteLine("3. Search Contact by City");
+                    Console.WriteLine("4. Search Contact by State");
+                    Console.WriteLine("5. Back to Main Menu");
+
+                    Console.Write("Enter choice: ");
+                    choice = int.Parse(Console.ReadLine());
+
+                    switch (choice)
+                    {
+                        case 1:
+                            book.AddContact();          // UC6 logic inside
+                            break;
+
+                        case 2:
+                            book.DisplayContacts();
+                            break;
+
+                        case 3:
+                            Console.Write("Enter City: ");
+                            string city = Console.ReadLine();
+                            book.SearchByCity(city);    // UC7
+                            break;
+
+                        case 4:
+                            Console.Write("Enter State: ");
+                            string state = Console.ReadLine();
+                            book.SearchByState(state);  // UC7
+                            break;
+
+                        case 5:
+                            break;
+
+                        default:
+                            Console.WriteLine("Invalid choice");
+                            break;
+                    }
+                }
+                while (choice != 5);
+            }
         }
-    }
+
+
 
     }
+
 
