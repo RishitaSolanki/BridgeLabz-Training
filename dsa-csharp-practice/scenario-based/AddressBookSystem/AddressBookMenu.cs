@@ -9,10 +9,10 @@ namespace ScenarioBased.AddressBookSystem
 
          private readonly IAddressBook addressBook;
 
-            public AddressBookMenu()
-            {
-                addressBook = new AddressBook();
-            }
+        private AddressBook[] addressBooks = new AddressBook[10];
+
+        private int bookCount = 0;
+
 
             public void ShowMenu()
             {
@@ -59,7 +59,55 @@ namespace ScenarioBased.AddressBookSystem
                 }
                 while (option != 5);
             }
+        private void SelectAddressBook()
+        {
+            Console.Write("Enter Address Book Name: ");
+            string name = Console.ReadLine();
+
+            for (int i = 0; i < bookCount; i++)
+            {
+                if (addressBooks[i].AddressBookName.Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
+                    addressBookMenu(addressBooks[i]);
+                    return;
+                }
+            }
+
+            Console.WriteLine("Address Book not found!");
         }
+
+        private void addressBookMenu(AddressBook book)
+        {
+            int choice;
+
+            do
+            {
+                Console.WriteLine($"\nAddress Book: {book.AddressBookName}");
+                Console.WriteLine("1. Add Contact");
+                Console.WriteLine("2. Display Contacts");
+                Console.WriteLine("3. Back");
+
+                Console.Write("Enter choice: ");
+                choice = int.Parse(Console.ReadLine());
+
+                switch (choice)
+                {
+                    case 1:
+                        book.AddContact();
+                        break;
+                    case 2:
+                        book.DisplayContacts();
+                        break;
+                    case 3:
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice");
+                        break;
+                }
+            }
+            while (choice != 3);
+        }
+    }
 
     }
 
