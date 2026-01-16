@@ -29,8 +29,9 @@ namespace ScenarioBased.AddressBookSystem
                 //Console.WriteLine("3. Delete Contact");
                 Console.WriteLine("4. Display All Contacts");
                 //Console.WriteLine("5. Search by City");   
-                Console.WriteLine("6. Search by State");  // UC9
-                Console.WriteLine("7. Exit");
+                //Console.WriteLine("6. Search by State");  
+                Console.WriteLine("7. Search by Zip");    // UC10
+                Console.WriteLine("8. Exit");
                 Console.Write("Enter your choice: ");
                 string choice = Console.ReadLine();
 
@@ -42,19 +43,26 @@ namespace ScenarioBased.AddressBookSystem
                     //case "2":
                     //    addressBook.EditContact();
                     //    break;
+
                     //case "3":
                     //    addressBook.DeleteContact();
-                        break;
+                    //    break;
                     case "4":
                         addressBook.DisplayContact();
                         break;
                     //case "5":
                     //    SearchByCity();    
                     //    break;
-                    case "6":
-                        SearchByState();   // UC9
-                        break;
+
+                    //case "6":
+                    //    SearchByState();   
+                    //    break;
+
                     case "7":
+                        SearchByZip();     // UC10
+                        break;
+
+                    case "8":
                         Console.WriteLine("Exiting...");
                         return;
                     default:
@@ -96,7 +104,38 @@ namespace ScenarioBased.AddressBookSystem
         //}
 
     
-        private void SearchByState()
+        //private void SearchByState()
+        //{
+        //    EContact[] contacts = addressBook.GetContactsArray();
+        //    int count = addressBook.GetContactCount();
+
+        //    if (count == 0)
+        //    {
+        //        Console.WriteLine("No contacts available to search.\n");
+        //        return;
+        //    }
+
+        //    Console.Write("Enter state to search: ");
+        //    string state = Console.ReadLine();
+        //    bool found = false;
+
+        //    for (int i = 0; i < count; i++)
+        //    {
+        //        if (contacts[i].State.Equals(state, StringComparison.OrdinalIgnoreCase))
+        //        {
+        //            contacts[i].DisplayContact();
+        //            found = true;
+        //        }
+        //    }
+
+        //    if (!found)
+        //    {
+        //        Console.WriteLine($"No contacts found in {state}.\n");
+        //    }
+        //}
+
+        // ---------------- UC10 ----------------
+        private void SearchByZip()
         {
             EContact[] contacts = addressBook.GetContactsArray();
             int count = addressBook.GetContactCount();
@@ -107,13 +146,13 @@ namespace ScenarioBased.AddressBookSystem
                 return;
             }
 
-            Console.Write("Enter state to search: ");
-            string state = Console.ReadLine();
+            Console.Write("Enter zip to search: ");
+            string zip = Console.ReadLine();
             bool found = false;
 
             for (int i = 0; i < count; i++)
             {
-                if (contacts[i].State.Equals(state, StringComparison.OrdinalIgnoreCase))
+                if (contacts[i].Zip.Equals(zip))
                 {
                     contacts[i].DisplayContact();
                     found = true;
@@ -122,10 +161,11 @@ namespace ScenarioBased.AddressBookSystem
 
             if (!found)
             {
-                Console.WriteLine($"No contacts found in {state}.\n");
+                Console.WriteLine($"No contacts found with zip {zip}.\n");
             }
         }
     }
+}
 
 
 }

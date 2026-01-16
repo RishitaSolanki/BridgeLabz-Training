@@ -57,17 +57,17 @@ namespace ScenarioBased.AddressBookSystem
         }
     }
 
-    
-    public EContact[] GetContactsArray()
-    {
-        return contacts;
-    }
 
-    public int GetContactCount()
-    {
-        return contactCount;
+        public EContact[] GetContactsArray()
+        {
+            return contacts;
+        }
+
+        public int GetContactCount()
+        {
+            return contactCount;
+        }
     }
-}
 
 }
 
