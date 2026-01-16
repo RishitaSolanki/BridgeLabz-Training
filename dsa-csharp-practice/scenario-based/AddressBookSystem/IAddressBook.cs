@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AddressBookSystem.AddressBookSystem
+namespace ScenarioBased.AddressBookSystem
 {
-    public interface IAddressBook
-    {
-       //this will use in future uc
+        public interface IAddressBook
+        {
+        void TakeInput();     
+        void EditContact();   // UC2
+        void DisplayContact();
     }
-}
+    }
 
