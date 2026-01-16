@@ -1,0 +1,136 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ScenarioBased.AddressBookSystem
+{
+   public class AddressBook: IAddressBook
+    {
+     
+
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+            public string Address { get; set; }
+            public string City { get; set; }
+            public string State { get; set; }
+            public string Zip { get; set; }
+            public string PhoneNumber { get; set; }
+            public string Email { get; set; }
+
+
+            public void AddContact()
+            {
+                Console.Write("Enter First Name: ");
+                FirstName = Console.ReadLine();
+
+                Console.Write("Enter Last Name: ");
+                LastName = Console.ReadLine();
+
+                Console.Write("Enter Address: ");
+                Address = Console.ReadLine();
+
+                Console.Write("Enter City: ");
+                City = Console.ReadLine();
+
+                Console.Write("Enter State: ");
+                State = Console.ReadLine();
+
+                Console.Write("Enter Zip: ");
+                Zip = Console.ReadLine();
+
+                Console.Write("Enter Phone Number: ");
+                PhoneNumber = Console.ReadLine();
+
+                Console.Write("Enter Email: ");
+                Email = Console.ReadLine();
+            }
+
+
+            public void EditContact()
+            {
+                Console.Write("Enter First Name to edit contact: ");
+                string name = Console.ReadLine();
+
+                if (FirstName.Equals(name))
+                {
+                    Console.WriteLine("Enter new details");
+
+                    Console.Write("Enter Address: ");
+                    Address = Console.ReadLine();
+
+                    Console.Write("Enter City: ");
+                    City = Console.ReadLine();
+
+                    Console.Write("Enter State: ");
+                    State = Console.ReadLine();
+
+                    Console.Write("Enter Zip: ");
+                    Zip = Console.ReadLine();
+
+                    Console.Write("Enter Phone Number: ");
+                    PhoneNumber = Console.ReadLine();
+
+                    Console.Write("Enter Email: ");
+                    Email = Console.ReadLine();
+
+                    Console.WriteLine("Contact updated successfully!");
+                }
+
+
+                else
+                {
+                    Console.WriteLine("Contact not found.");
+                }
+            }
+            
+            public void DeleteContact()
+            {
+                Console.Write("Enter First Name to delete contact: ");
+                string name = Console.ReadLine();
+
+                if (FirstName != null &&
+                    FirstName.Equals(name, StringComparison.OrdinalIgnoreCase))
+                {
+                    FirstName = null;
+                    LastName = null;
+                    Address = null;
+                    City = null;
+                    State = null;
+                    Zip = null;
+                    PhoneNumber = null;
+                    Email = null;
+
+                    Console.WriteLine("Contact deleted successfully!");
+                }
+                else
+                {
+                    Console.WriteLine("Contact not found.");
+                }
+            }
+
+
+            public void DisplayContact()
+            {
+
+                if (FirstName == null)
+                {
+                    Console.WriteLine("No contact available.");
+                    return;
+                }
+
+                Console.WriteLine("--Contact Details--");
+                Console.WriteLine("Name: " + FirstName + " " + LastName);
+                Console.WriteLine("Address: " + Address);
+                Console.WriteLine("City: " + City);
+                Console.WriteLine("State: " + State);
+                Console.WriteLine("Zip: " + Zip);
+                Console.WriteLine("Phone: " + PhoneNumber);
+                Console.WriteLine("Email: " + Email);
+            }
+        }
+
+    }
+
+
+
+

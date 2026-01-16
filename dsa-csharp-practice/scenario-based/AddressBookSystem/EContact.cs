@@ -3,131 +3,39 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace ScenarioBased.AddressBookSystem
-{ 
-        public class EContact: IAddressBook
+{
+    public class EContact
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Zip { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Email { get; set; }
+
+        public void Display()
         {
-       
-           public string FirstName { get; set; }
-            public string LastName { get; set; }
-            public string Address { get; set; }
-            public string City { get; set; }
-            public string State { get; set; }
-            public string Zip { get; set; }
-            public string PhoneNumber { get; set; }
-            public string Email { get; set; }
 
-        
-            public void TakeInput()
-            {
-                Console.Write("Enter First Name: ");
-                FirstName = Console.ReadLine();
+            Console.WriteLine("Display Contacts");
 
-                Console.Write("Enter Last Name: ");
-                LastName = Console.ReadLine();
+            Console.WriteLine("Name: " + FirstName + " " + LastName);
 
-                Console.Write("Enter Address: ");
-                Address = Console.ReadLine();
+            Console.WriteLine("Address: " + Address);
 
-                Console.Write("Enter City: ");
-                City = Console.ReadLine();
+            Console.WriteLine("City: " + City);
 
-                Console.Write("Enter State: ");
-                State = Console.ReadLine();
+            Console.WriteLine("State: " + State);
 
-                Console.Write("Enter Zip: ");
-                Zip = Console.ReadLine();
+            Console.WriteLine("Zip: " + Zip);
 
-                Console.Write("Enter Phone Number: ");
-                PhoneNumber = Console.ReadLine();
+            Console.WriteLine("Phone: " + PhoneNumber);
 
-                Console.Write("Enter Email: ");
-                Email = Console.ReadLine();
-            }
-
-       
-        public void EditContact()
-        {
-            Console.Write("Enter First Name to edit contact: ");
-            string name = Console.ReadLine();
-
-            if (FirstName.Equals(name))
-            {
-                Console.WriteLine("\nEnter new details");
-
-                Console.Write("Enter Address: ");
-                Address = Console.ReadLine();
-
-                Console.Write("Enter City: ");
-                City = Console.ReadLine();
-
-                Console.Write("Enter State: ");
-                State = Console.ReadLine();
-
-                Console.Write("Enter Zip: ");
-                Zip = Console.ReadLine();
-
-                Console.Write("Enter Phone Number: ");
-                PhoneNumber = Console.ReadLine();
-
-                Console.Write("Enter Email: ");
-                Email = Console.ReadLine();
-
-                Console.WriteLine("Contact updated successfully!");
-            }
-
-
-            else
-            {
-                Console.WriteLine("Contact not found.");
-            }
-        }
-        //UC3 – Delete Contact
-        public void DeleteContact()
-        {
-            Console.Write("Enter First Name to delete contact: ");
-            string name = Console.ReadLine();
-
-            if (FirstName != null &&
-                FirstName.Equals(name, StringComparison.OrdinalIgnoreCase))
-            {
-                FirstName = null;
-                LastName = null;
-                Address = null;
-                City = null;
-                State = null;
-                Zip = null;
-                PhoneNumber = null;
-                Email = null;
-
-                Console.WriteLine("Contact deleted successfully!");
-            }
-            else
-            {
-                Console.WriteLine("Contact not found.");
-            }
+            Console.WriteLine("Email: " + Email);
         }
 
-
-        public void DisplayContact()
-            {
-
-            if (FirstName == null)
-            {
-                Console.WriteLine("\nNo contact available.");
-                return;
-            }
-
-            Console.WriteLine("--Contact Details--");
-                Console.WriteLine("Name: " + FirstName + " " + LastName);
-                Console.WriteLine("Address: " + Address);
-                Console.WriteLine("City: " + City);
-                Console.WriteLine("State: " + State);
-                Console.WriteLine("Zip: " + Zip);
-                Console.WriteLine("Phone: " + PhoneNumber);
-                Console.WriteLine("Email: " + Email);
-            }
-        }
-
+    }
     }
 
 
