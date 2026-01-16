@@ -11,17 +11,8 @@ namespace ScenarioBased.AddressBookSystem
 
         Console.WriteLine("Welcome to Address Book Program");
 
-        IAddressBook contact = new EContact();
-
-        contact.TakeInput();      
-        
-          
-          contact.EditContact();
-
-            // UC3
-            contact.DeleteContact();
-
-            contact.DisplayContact();
+            AddressBookMenu menu = new AddressBookMenu();
+            menu.ShowMenu();
 
         }
 }

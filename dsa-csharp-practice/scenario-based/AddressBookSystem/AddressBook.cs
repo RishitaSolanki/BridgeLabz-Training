@@ -6,7 +6,6 @@ namespace ScenarioBased.AddressBookSystem
 {
    public class AddressBook
     {
-
         public string AddressBookName;
 
         private EContact[] contacts = new EContact[10];
@@ -25,13 +24,27 @@ namespace ScenarioBased.AddressBookSystem
                 return;
             }
 
-            EContact contact = new EContact();
-
             Console.Write("First Name: ");
-            contact.FirstName = Console.ReadLine();
+            string firstName = Console.ReadLine();
 
             Console.Write("Last Name: ");
-            contact.LastName = Console.ReadLine();
+            string lastName = Console.ReadLine();
+
+            //UC6 Duplicate Check
+            for (int i = 0; i < contactCount; i++)
+            {
+                if (contacts[i].FirstName.Equals(firstName, StringComparison.OrdinalIgnoreCase) &&
+                    contacts[i].LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Duplicate contact found. Cannot add.");
+                    return;
+                }
+            }
+
+            // If not duplicate → add
+            EContact contact = new EContact();
+            contact.FirstName = firstName;
+            contact.LastName = lastName;
 
             Console.Write("Address: ");
             contact.Address = Console.ReadLine();

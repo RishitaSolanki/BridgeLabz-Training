@@ -82,7 +82,7 @@ namespace ScenarioBased.AddressBookSystem
 
             do
             {
-                Console.WriteLine($"\nAddress Book: {book.AddressBookName}");
+                Console.WriteLine($"Address Book: {book.AddressBookName}");
                 Console.WriteLine("1. Add Contact");
                 Console.WriteLine("2. Display Contacts");
                 Console.WriteLine("3. Back");
