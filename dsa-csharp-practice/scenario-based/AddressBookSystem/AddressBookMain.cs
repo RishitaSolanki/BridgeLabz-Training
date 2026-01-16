@@ -15,9 +15,13 @@ namespace ScenarioBased.AddressBookSystem
 
         contact.TakeInput();      
         
-          // UC2
+          
           contact.EditContact();
-          contact.DisplayContact();
+
+            // UC3
+            contact.DeleteContact();
+
+            contact.DisplayContact();
 
         }
 }

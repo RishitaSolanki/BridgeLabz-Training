@@ -7,7 +7,8 @@ namespace ScenarioBased.AddressBookSystem
         public interface IAddressBook
         {
         void TakeInput();     
-        void EditContact();   // UC2
+        void EditContact();   
+        void DeleteContact();  // UC3
         void DisplayContact();
     }
     }

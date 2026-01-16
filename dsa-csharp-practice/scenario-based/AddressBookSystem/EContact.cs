@@ -44,10 +44,10 @@ namespace ScenarioBased.AddressBookSystem
                 Email = Console.ReadLine();
             }
 
-        // UC2 - Edit Contact
+       
         public void EditContact()
         {
-            Console.Write("\nEnter First Name to edit contact: ");
+            Console.Write("Enter First Name to edit contact: ");
             string name = Console.ReadLine();
 
             if (FirstName.Equals(name))
@@ -81,12 +81,43 @@ namespace ScenarioBased.AddressBookSystem
                 Console.WriteLine("Contact not found.");
             }
         }
+        //UC3 – Delete Contact
+        public void DeleteContact()
+        {
+            Console.Write("Enter First Name to delete contact: ");
+            string name = Console.ReadLine();
 
+            if (FirstName != null &&
+                FirstName.Equals(name, StringComparison.OrdinalIgnoreCase))
+            {
+                FirstName = null;
+                LastName = null;
+                Address = null;
+                City = null;
+                State = null;
+                Zip = null;
+                PhoneNumber = null;
+                Email = null;
+
+                Console.WriteLine("Contact deleted successfully!");
+            }
+            else
+            {
+                Console.WriteLine("Contact not found.");
+            }
+        }
 
 
         public void DisplayContact()
             {
-                Console.WriteLine("--Contact Details--");
+
+            if (FirstName == null)
+            {
+                Console.WriteLine("\nNo contact available.");
+                return;
+            }
+
+            Console.WriteLine("--Contact Details--");
                 Console.WriteLine("Name: " + FirstName + " " + LastName);
                 Console.WriteLine("Address: " + Address);
                 Console.WriteLine("City: " + City);
