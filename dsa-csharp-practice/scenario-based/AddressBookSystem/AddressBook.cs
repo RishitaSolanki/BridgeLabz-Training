@@ -42,7 +42,6 @@ namespace ScenarioBased.AddressBookSystem
         Console.WriteLine("Contact added successfully!\n");
     }
 
-    
 
     public void DisplayContact()
     {
