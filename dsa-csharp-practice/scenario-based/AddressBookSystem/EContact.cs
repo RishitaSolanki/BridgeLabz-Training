@@ -15,7 +15,7 @@ namespace ScenarioBased.AddressBookSystem
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
 
-        public void Display()
+        public void DisplayContact()
         {
 
             Console.WriteLine("Display Contacts");
