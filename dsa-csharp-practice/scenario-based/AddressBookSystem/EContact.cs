@@ -6,36 +6,27 @@ namespace ScenarioBased.AddressBookSystem
 {
     public class EContact
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Address { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
-        public string Zip { get; set; }
-        public string PhoneNumber { get; set; }
-        public string Email { get; set; }
+        public String firstName { get; set; }
+        public String lastName { get; set; }
+        public String address { get; set; }
+        public String city { get; set; }
+        public String state { get; set; }
+        public String zip { get; set; }
+        public String phoneNumber { get; set; }
+        public String eMail { get; set; }
 
-        public void DisplayContact()
+        public Contact(string firstName, string lastName, string address, string city, string state, string zip, string phoneNumber, string eMail)
         {
-
-            Console.WriteLine("Display Contacts");
-
-            Console.WriteLine("Name: " + FirstName + " " + LastName);
-
-            Console.WriteLine("Address: " + Address);
-
-            Console.WriteLine("City: " + City);
-
-            Console.WriteLine("State: " + State);
-
-            Console.WriteLine("Zip: " + Zip);
-
-            Console.WriteLine("Phone: " + PhoneNumber);
-
-            Console.WriteLine("Email: " + Email);
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.address = address;
+            this.city = city;
+            this.state = state;
+            this.zip = zip;
+            this.phoneNumber = phoneNumber;
+            this.eMail = eMail;
         }
-
     }
-    }
+}
 
 

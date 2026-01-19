@@ -4,171 +4,143 @@ using System.Text;
 
 namespace ScenarioBased.AddressBookSystem
 {
-    public class AddressBookMenu: IAddressBook 
+    public class AddressBookMenu
     {
 
-        private AddressBook addressBook = new AddressBook();
+            private AddressBook[] bookShelf = new AddressBook[10];
+            private IAddressable bookManager = new AddressableImpl();
+            private IContactable contactManager = new ContactableImpl();
 
-        public void AddContact()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void DisplayContact()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void ShowMenu()
-        {
-            while (true)
+            public void Start()
             {
-                Console.WriteLine("---- Address Book Menu ----");
-                Console.WriteLine("1. Add Contact");
-                //Console.WriteLine("2. Edit Contact");
-                //Console.WriteLine("3. Delete Contact");
-                Console.WriteLine("4. Display All Contacts");
-                //Console.WriteLine("5. Search by City");   
-                //Console.WriteLine("6. Search by State");  
-                Console.WriteLine("7. Search by Zip");    // UC10
-                Console.WriteLine("8. Exit");
-                Console.Write("Enter your choice: ");
-                string choice = Console.ReadLine();
+                bool running = true;
 
-                switch (choice)
+                while (running)
                 {
-                    case "1":
-                        addressBook.AddContact();
-                        break;
-                    //case "2":
-                    //    addressBook.EditContact();
-                    //    break;
+                    Utility.PrintLogo();
+                    Utility.ShowBookMenu();
+                    string choice = Console.ReadLine();
 
-                    //case "3":
-                    //    addressBook.DeleteContact();
-                    //    break;
-                    case "4":
-                        addressBook.DisplayContact();
-                        break;
-                    //case "5":
-                    //    SearchByCity();    
-                    //    break;
+                    if (choice == "1") CreateBook();
+                    else if (choice == "2") OpenBook();
+                    else if (choice == "3") DeleteBook();
+                    else if (choice == "4") SearchByCity();
+                    else if (choice == "5") SearchByState();
+                    else if (choice == "6") FindPersonByCity();
+                    else if (choice == "7") FindPersonByState();
+                    else if (choice == "8") CountByCity();
+                    else if (choice == "9") CountByState();
+                    else if (choice == "10") running = false;
+                    else Console.WriteLine("    Invalid Option.");
+                }
+            }
 
-                    //case "6":
-                    //    SearchByState();   
-                    //    break;
+            private void CreateBook()
+            {
+                string name = Utility.GetInput("Enter New Book Name");
 
-                    case "7":
-                        SearchByZip();     // UC10
-                        break;
+                if (bookManager.FindBook(bookShelf, name) != null)
+                {
+                    Console.WriteLine("    [!] Book already exists.");
+                    Utility.WaitForKey();
+                    return;
+                }
 
-                    case "8":
-                        Console.WriteLine("Exiting...");
+                for (int i = 0; i < bookShelf.Length; i++)
+                {
+                    if (bookShelf[i] == null)
+                    {
+                        bookShelf[i] = new AddressBook(name);
+                        Console.WriteLine($"    [!] Address Book '{name}' Created.");
+                        Utility.WaitForKey();
                         return;
-                    default:
-                        Console.WriteLine("Invalid choice!\n");
-                        break;
+                    }
                 }
-            }
-        }
 
-        
-        //private void SearchByCity()
-        //{
-        //    EContact[] contacts = addressBook.GetContactsArray();
-        //    int count = addressBook.GetContactCount();
-
-        //    if (count == 0)
-        //    {
-        //        Console.WriteLine("No contacts available to search.\n");
-        //        return;
-        //    }
-
-        //    Console.Write("Enter city to search: ");
-        //    string city = Console.ReadLine();
-        //    bool found = false;
-
-        //    for (int i = 0; i < count; i++)
-        //    {
-        //        if (contacts[i].City.Equals(city, StringComparison.OrdinalIgnoreCase))
-        //        {
-        //            contacts[i].DisplayContact();
-        //            found = true;
-        //        }
-        //    }
-
-        //    if (!found)
-        //    {
-        //        Console.WriteLine($"No contacts found in {city}.\n");
-        //    }
-        //}
-
-    
-        //private void SearchByState()
-        //{
-        //    EContact[] contacts = addressBook.GetContactsArray();
-        //    int count = addressBook.GetContactCount();
-
-        //    if (count == 0)
-        //    {
-        //        Console.WriteLine("No contacts available to search.\n");
-        //        return;
-        //    }
-
-        //    Console.Write("Enter state to search: ");
-        //    string state = Console.ReadLine();
-        //    bool found = false;
-
-        //    for (int i = 0; i < count; i++)
-        //    {
-        //        if (contacts[i].State.Equals(state, StringComparison.OrdinalIgnoreCase))
-        //        {
-        //            contacts[i].DisplayContact();
-        //            found = true;
-        //        }
-        //    }
-
-        //    if (!found)
-        //    {
-        //        Console.WriteLine($"No contacts found in {state}.\n");
-        //    }
-        //}
-
-        // ---------------- UC10 ----------------
-        private void SearchByZip()
-        {
-            EContact[] contacts = addressBook.GetContactsArray();
-            int count = addressBook.GetContactCount();
-
-            if (count == 0)
-            {
-                Console.WriteLine("No contacts available to search.\n");
-                return;
+                Console.WriteLine("    [!] Shelf Full.");
+                Utility.WaitForKey();
             }
 
-            Console.Write("Enter zip to search: ");
-            string zip = Console.ReadLine();
-            bool found = false;
-
-            for (int i = 0; i < count; i++)
+            private void OpenBook()
             {
-                if (contacts[i].Zip.Equals(zip))
+                string name = Utility.GetInput("Enter Book Name to Open");
+                AddressBook book = bookManager.FindBook(bookShelf, name);
+
+                if (book == null)
                 {
-                    contacts[i].DisplayContact();
-                    found = true;
+                    Console.WriteLine("    [!] Book Not Found.");
+                    Utility.WaitForKey();
+                    return;
                 }
+
+                ContactBookMenu contactMenu = new ContactBookMenu(contactManager);
+                contactMenu.Manage(book);
             }
 
-            if (!found)
+            private void DeleteBook()
             {
-                Console.WriteLine($"No contacts found with zip {zip}.\n");
+                string name = Utility.GetInput("Enter Book Name to Delete");
+
+                for (int i = 0; i < bookShelf.Length; i++)
+                {
+                    if (bookShelf[i] != null && bookShelf[i].bookName == name)
+                    {
+                        bookShelf[i] = null;
+                        Console.WriteLine($"    [!] '{name}' Deleted.");
+                        Utility.WaitForKey();
+                        return;
+                    }
+                }
+
+                Console.WriteLine("    [!] Book Not Found.");
+                Utility.WaitForKey();
+            }
+
+            private void SearchByCity()
+            {
+                string city = Utility.GetInput("Enter City");
+                Utility.PrintSearchResults(bookManager.FindByCity(bookShelf, city));
+                Utility.WaitForKey();
+            }
+
+            private void SearchByState()
+            {
+                string state = Utility.GetInput("Enter State");
+                Utility.PrintSearchResults(bookManager.FindByState(bookShelf, state));
+                Utility.WaitForKey();
+            }
+
+            private void FindPersonByCity()
+            {
+                string city = Utility.GetInput("Enter City");
+                string name = Utility.GetInput("Enter Person Name");
+                Utility.PrintSingleResult(bookManager.FindByCityAndName(bookShelf, city, name));
+                Utility.WaitForKey();
+            }
+
+            private void FindPersonByState()
+            {
+                string state = Utility.GetInput("Enter State");
+                string name = Utility.GetInput("Enter Person Name");
+                Utility.PrintSingleResult(bookManager.FindByStateAndName(bookShelf, state, name));
+                Utility.WaitForKey();
+            }
+
+            private void CountByCity()
+            {
+                string city = Utility.GetInput("Enter City");
+                Utility.PrintCountResult("City", city, bookManager.CountByCity(bookShelf, city));
+                Utility.WaitForKey();
+            }
+
+            private void CountByState()
+            {
+                string state = Utility.GetInput("Enter State");
+                Utility.PrintCountResult("State", state, bookManager.CountByState(bookShelf, state));
+                Utility.WaitForKey();
             }
         }
     }
-}
-
-
-}
 
 
 
