@@ -225,6 +225,58 @@ date-14/1/26(Wednesday)
 2. revised some topic of dsa
 3. start solving scneario based question which having 18 UC (Address Book Problem)
 
+DAY 24:-
+date-15/1/26(Thrusday)
+1. complete the scneario based question (Address Book Problem)
+2. solved another scneario based question(BrowserBuddy – Tab History Manager)
+3. attend meeting with capgemini mentor
+
+
+DAY 25:-
+date-16/1/26(Friday)
+1.solved scneario based question-
+->BookShelf – Library Organiz Story
+->TrafficManager – Roundabout Vehicle Flow Story
+
+DAY 26:-
+date-17/1/26(Saturday)
+1. Deep understanding of Data structure algorithm(Linkedlist,stack,queue,sorting searching)
+2. solved scneario based question-
+->FlashDealz – Product Sorting by Discount(concept involved-quick sort,bubble sort)
+
+DAY 27:-
+date-19/1/26(Monday)
+Topic-Genrics
+1. Basic understanding of genrics
+2. based on learning solved assignment of genrics
+3. revise DSA
+4. solved scneario based question using DSA
+   ->ExamProctor – Online Exam Review System 
+   ->ParcelTracker – Delivery Chain Management
+
+DAY 28:-
+date-20/1/26(Tuesday)
+Topic-Collections
+1. basic understanding of Collection
+2. based on learning solved assignment of collection
+3. solved scneario based question 
+   ->Password Cracker Simulator(here we use concept of backtracking)
+   ->Sorting Aadhar Numbers using Radix Sort
+
+DAY 29:-
+date-21/1/26(Wednesday)
+Topic-streams
+1. basic understanding of streams
+2. based on learning solved assignment of streams
+3. solved scneario based question using DSA
+   ->SmartCheckout – Supermarket Billing Queue
+   ->EduResults – Rank Sheet Generator
+
+DAY 30:-
+date-22/1/26(Thrusday)
+
+
+
 
 
 
