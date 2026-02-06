@@ -272,8 +272,34 @@ Topic-streams
    ->SmartCheckout – Supermarket Billing Queue
    ->EduResults – Rank Sheet Generator
 
+
 DAY 30:-
 date-22/1/26(Thrusday)
+Topic-Exceptions and Exception handling
+1. understanding of what is exception
+2. learn about exception handling
+3. based on that learning solved assignment on exception handling
+4. after that learn the difference between genric collection and non-genric collection
+5. solved 1 scneario based question based on DSA(AmbulanceRoute – Emergency Patient Navigation)
+
+
+DAY 31:-
+date-23/1/26(Friday)
+Topic-Regex
+1. understanding about regex
+2. understanding of patterns , character classes , quantifiers
+3. based on learning solved assignment on regex
+
+
+DAY 32:-
+date-24/1/26(Saturday)
+Topic-Annotation and Reflection
+1. understanding about annotation(attributes) and reflection
+2. understanding of built-in annotation , custom annotation , real-use-case
+3. understanding of classes in reflection (type, fieldInfo , MethodInfo etc.)
+4. based on that solved assignments on annotation and reflection
+5.    
+
 
 
 
