@@ -293,12 +293,47 @@ Topic-Regex
 
 DAY 32:-
 date-24/1/26(Saturday)
+Topic - MStest and NUnit testing
+1. understanding about MSTest Framework
+2. Comparison between MSTest and Nunit
+3. writing test class and test methods 
+4. Exception testing in unit testing
+5. Regex testing using both framework
+
+
+DAY 33:-
+date-26/1/26(Monday
 Topic-Annotation and Reflection
 1. understanding about annotation(attributes) and reflection
 2. understanding of built-in annotation , custom annotation , real-use-case
 3. understanding of classes in reflection (type, fieldInfo , MethodInfo etc.)
 4. based on that solved assignments on annotation and reflection
-5.    
+
+
+DAY 34:-
+date-27/1/26(Tuesday)
+Topic-Sonar cube and code quality
+1. SonarQube setup & analysis concepts
+2. learn Code smells & quality rules
+3. Tried implementing SonarQube (partially completed)
+4. Refactored Address Book application using Collections & Generics
+5. solved 2 scneario based question
+
+
+DAY 35:-
+date-28/1/26(Wednesday)
+Topic -CSV Handling & Exception-Centric Systems
+1.  CSV file reading & writing
+2.  CSV parsing
+3.  Exception handling in file operations
+4.  Based on learning Solved assignment on CSV data handling
+5.  solved 2 scneario based question(AeroVigil , Bank Account)
+
+
+DAY 36:-
+
+
+
 
 
 
