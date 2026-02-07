@@ -302,7 +302,7 @@ Topic - MStest and NUnit testing
 
 
 DAY 33:-
-date-26/1/26(Monday
+date-26/1/26(Monday)
 Topic-Annotation and Reflection
 1. understanding about annotation(attributes) and reflection
 2. understanding of built-in annotation , custom annotation , real-use-case
@@ -331,6 +331,38 @@ Topic -CSV Handling & Exception-Centric Systems
 
 
 DAY 36:-
+date-29/1/26(Thrusday)
+Topic -JSON and Regex
+1. JSON Concepts
+2. Reading & writing JSON files and Parsing JSON data
+3. Implemented JSON read/write utilities 
+4. Regex revision & advanced patterns
+5. solved scneario based question(LexicalTwit)
+
+
+DAY 37:-
+date-30/1/26(Friday)
+1. JSON Practice & Concept Revision
+2. based on json learning solved assignment
+3. Revision of Collections, Exceptions, Regex
+4. solved scneario based question(Future Logistics)
+
+
+DAY 38:-
+date-31/1/26(Saturday)
+1. Address Book – Feature Completion
+2. Applying learned concepts
+3. Implemented additional UCs in Address Book(Integrated Collections, Generics, Exception Handling, and File Operation)
+
+
+DAY 39:-
+date-2/2/26(Monday)
+Topic- Design Principles and Regex
+1. Software design principles
+->KISS (Keep It Simple, Stupid)
+->DRY (Don’t Repeat Yourself)
+->DIY (Do It Yourself) 
+   
 
 
 
