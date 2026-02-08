@@ -1,7 +1,8 @@
 ﻿
 using AddressBookApp.Models;
 using AddressBookApp.Exceptions;
-
+using System.IO;
+using System.Text.Json;
 namespace AddressBookApp.Services
 {
     public class AddressBookService
@@ -360,6 +361,71 @@ public void ReadFromCsv()
     catch (Exception ex)
     {
         Console.WriteLine($"Error reading CSV: {ex.Message}");
+    }
+}
+private string jsonPath = "AddressBook.json";
+
+// UC 15: Write to JSON
+public void WriteToJson()
+{
+    try
+    {
+        // JsonSerializerOptions makes the file "pretty" and readable for humans
+        var options = new JsonSerializerOptions { WriteIndented = true };
+        string jsonString = JsonSerializer.Serialize(addressBooks, options);
+        
+        File.WriteAllText(jsonPath, jsonString);
+        Console.WriteLine($"Successfully exported data to {jsonPath}");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error writing JSON: {ex.Message}");
+    }
+}
+
+// UC 15: Read from JSON
+public void ReadFromJson()
+{
+    if (!File.Exists(jsonPath))
+    {
+        Console.WriteLine("JSON file not found.");
+        return;
+    }
+
+    try
+    {
+        string jsonString = File.ReadAllText(jsonPath);
+        
+        // Deserialize back into the dictionary structure
+        var importedData = JsonSerializer.Deserialize<Dictionary<string, AddressBookModel<int>>>(jsonString);
+
+        if (importedData != null)
+        {
+            foreach (var item in importedData)
+            {
+                // Logic to merge or overwrite
+                if (!addressBooks.ContainsKey(item.Key))
+                {
+                    addressBooks[item.Key] = item.Value;
+                }
+                else
+                {
+                    // Merge contacts if the book already exists in memory
+                    foreach (var contact in item.Value.Contacts)
+                    {
+                        if (!addressBooks[item.Key].Contacts.Any(c => c.Id == contact.Id))
+                        {
+                            addressBooks[item.Key].Contacts.Add(contact);
+                        }
+                    }
+                }
+            }
+            Console.WriteLine("JSON data imported and merged successfully.");
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error reading JSON: {ex.Message}");
     }
 }
 

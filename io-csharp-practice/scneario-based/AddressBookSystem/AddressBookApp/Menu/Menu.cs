@@ -40,7 +40,11 @@ public class Menu
                         case 14: _service.WriteToCsv(); break;
                         case 15:_service.ReadFromCsv(); break;
                         case 16:_service.ReadFromFile(); break;
-                        case 17: return;
+                        case 17:_service.WriteToJson(); break;
+                        case 18:_service.ReadFromJson(); break;
+                        case 19: 
+                        Console.WriteLine("Exiting...");
+                        return;
                         default:
                             Console.WriteLine("Invalid choice.");
                             break;
@@ -68,7 +72,8 @@ public class Menu
             Console.WriteLine("6. Search by City         13. Save to File (TXT)");
             Console.WriteLine("7. Search by State        14. Save to CSV ");
             Console.WriteLine("15. Load from CSV         16. Load From File");
-            Console.WriteLine("17. Exit");
+            Console.WriteLine("17. Save to JSON          18. Load from JSON");
+            Console.WriteLine("19. Exit");
             Console.WriteLine("====================================");
         }
 
