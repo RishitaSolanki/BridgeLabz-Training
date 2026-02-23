@@ -478,16 +478,22 @@ date- 20/2/26(Friday)
 2. Implemented UC3 and UC4 in Quantity measurement app
 3. attend soft skill classes
 
-
+   
 DAY 56:-
-date- 22/2/26(Monday)
+date- 21/2/26(Saturday)
+1. Completed all pending works
+2. Continue with a project Quantity Measurement App
+3. Implemented UC5 and UC6 in Quantity measurement App
+
+DAY 57:-
+date- 23/2/26(Monday)
 1. Continue with a project Quantity Measurement App
-2. Implemented UC5 and UC6 in Quantity measurement app
+2. Implemented UC7 and UC8 in Quantity measurement App
 3. revise previous topics
 
 
-DAY 57:-
-date- 23/2/26(Tuesday)
+DAY 58:-
+date- 24/2/26(Tuesday)
 
    
 
