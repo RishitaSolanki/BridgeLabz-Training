@@ -281,6 +281,7 @@ Topic-Exceptions and Exception handling
 3. based on that learning solved assignment on exception handling
 4. after that learn the difference between genric collection and non-genric collection
 5. solved 1 scneario based question based on DSA(AmbulanceRoute – Emergency Patient Navigation)
+6. attend meeting with capgemini mentor
 
 
 DAY 31:-
@@ -338,6 +339,7 @@ Topic -JSON and Regex
 3. Implemented JSON read/write utilities 
 4. Regex revision & advanced patterns
 5. solved scneario based question(LexicalTwit)
+6. attended meeting with capgemini mentor
 
 
 DAY 37:-
@@ -361,7 +363,144 @@ Topic- Design Principles and Regex
 1. Software design principles
 ->KISS (Keep It Simple, Stupid)
 ->DRY (Don’t Repeat Yourself)
-->DIY (Do It Yourself) 
+->DIY (Do It Yourself)
+2. learn about Multithreading
+
+
+DAY 40:-
+date-3/2/26(Tuesday)
+1. Deep understanding of Multithreading
+2. Applying learned concepts
+3. Implemented additional UCs in Address Book
+
+DAY 41:-
+date-4/2/26(Wednesday)
+Topic- Start learning DBMS
+1. Based on learning solved assignment on Multithreading
+2. learn about RDBMS
+3. learn about DDL, DCL, DML with sql server
+
+
+DAY 42:-
+date-5/2/26(Thrusday)
+Topic- Deep Understanding of MSSQL
+1. learm Core MSSQL programming concepts
+2. learn SQL joins , subqueries ,aggregate functions and data grouping techniques
+3. start solving one new project (HealthCare)
+4. attended meeting with our capgemini mentor
+
+
+DAY 43:-
+date-6/2/26(Friday)
+1. Implemented additional UCs in Healthcare
+2. based on learning on DBMS and MSSQL solved assignments
+3. attend soft skill classes
+
+
+DAY 44:-
+date-7/2/26(Saturday)
+1. based on learning Completed all UCs in Address Book
+2. based on DBMS learning Completed all UCs in Healthcare
+
+
+DAY 45:-
+date-9/2/26(Monday)
+1. Revise all topics as we are having our mock exam
+2. completed all pending works
+
+
+DAY 46:-
+date- 10/2/26(Tuesday)
+-> We are having our Mock Exam(1)
+-solved 3 question
+
+
+DAY 47:-
+date- 11/2/26(Wednesday)
+1. based on learning solved DBMS assignment
+2. solved scneario based question
+
+
+DAY 48:-
+date- 12/2/26(Thrusday)
+1. solved scneario based question
+-> NotifyHub – Concurrent Notification Processing System (On Multithreading, Async Programming, Collections, OOP – Basic & Advanced, Annotations)
+2. attend meeting with our capgemini mentor
+3. solve 1 question given on meeting
+
+
+DAY 49:-
+date- 13/2/26(Friday)
+1. solved scneario based problem involving concepts of multithreading, IO file handling and Annotation with Regex.
+   ->Email Validator – College Admission Portal
+2. attend soft skill classes
+
+
+DAY 50:-
+date- 14/2/26(Saturday)
+1. solved scenario-based problems involving Collections, Generics, I/O Streams, and Regex
+2. revise all topic
+3. completed all pending works
+
+
+DAY 51:-
+date- 16/2/26(Monday)
+Topic- start learning ADO.net
+1. learn basics of ADO.net
+2. learn MS SQL Server / DBMS
+3. learn Collections (Deep CLR Level)
+4. learn Multithreading , File Handling , Annotations & Reflection and NUnit / MSTest
+
+
+DAY 52:-
+date- 17/2/26(Tuesday)
+1. deep understanding of ADO.net
+2. learn ASP.net core basics
+3. learn abour a new project (Quantity Measurement App)
+
+
+DAY 53:-
+date- 18/2/26(Wednesday)
+-> we are having our Mock exam(2)
+-solved 2 question
+
+
+DAY 54:-
+date- 19/2/26(Thrusday)
+1. start solving a project Quantity Measurement App
+2. Implemented UC1 and UC2 in Quantity measurement app
+3. attended meeting with our capgemini mentor
+
+
+DAY 55:-
+date- 20/2/26(Friday)
+1. Continue with a project Quantity Measurement App
+2. Implemented UC3 and UC4 in Quantity measurement app
+3. attend soft skill classes
+
+
+DAY 56:-
+date- 22/2/26(Monday)
+1. Continue with a project Quantity Measurement App
+2. Implemented UC5 and UC6 in Quantity measurement app
+3. revise previous topics
+
+
+DAY 57:-
+date- 23/2/26(Tuesday)
+
+   
+
+
+   
+
+       
+
+
+
+
+   
+
    
 
 
