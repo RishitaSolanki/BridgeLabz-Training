@@ -24,10 +24,14 @@ This repository documents my complete learning journey during the BridgeLabz Tra
 
 
 🎯 Learning Objectives
-Strengthen Core C# fundamentals
-Improve problem-solving skills
-Master Object-Oriented Programming
-Prepare for technical interviews
+
+-Strengthen Core C# fundamentals
+
+-Improve problem-solving skills
+
+-Master Object-Oriented Programming
+
+-Prepare for technical interviews
 
 
 📅 Day-wise Training Log
@@ -35,64 +39,64 @@ Prepare for technical interviews
 🔰 Phase 1: GitHub & C# Basics
 
 Day 1 (16/12/25, Tuesday)
-GitHub basics, repository creation, branching, kickoff session
+-GitHub basics, repository creation, branching, kickoff session
 
 Day 2 (17/12/25, Wednesday)
-Deep dive into GitHub, solved basic problems
+-Deep dive into GitHub, solved basic problems
 
 Day 3 (18/12/25, Thursday)
-.NET setup, CLR, MSIL, JIT, C# syntax
+-.NET setup, CLR, MSIL, JIT, C# syntax
 
 Day 4 (19/12/25, Friday)
-Data types, variables, operators
+-Data types, variables, operators
 
 Day 5 (20/12/25, Saturday)
-Access modifiers
+-Access modifiers
 
 Day 6 (22/12/25, Monday)
-Control flow, Visual Studio
+-Control flow, Visual Studio
 
 Day 7 (23/12/25, Tuesday)
-Arrays
+-Arrays
 
 Day 8 (24/12/25, Wednesday)
-Methods
+-Methods
 
 🧠 Phase 2: Core C# & OOP
 
 Day 9 (26/12/25, Friday)
-Strings
+-Strings
 
 Day 10 (29/12/25, Monday)
-OOP basics, classes & objects
+-OOP basics, classes & objects
 
 Day 11 (30/12/25, Tuesday)
-Constructors
+-Constructors
 
 Day 12 (31/12/25, Wednesday)
-Keywords
+-Keywords
 
 Day 13 (01/01/26, Thursday)
-Object modeling
+-Object modeling
 
 Day 14 (02/01/26, Friday)
-Inheritance
+-Inheritance
 
 Day 15 (03/01/26, Saturday)
-Revision
+-Revision
 
 🏗️ Phase 3: Advanced OOP
 
 Day 16 (05/01/26, Monday)
-Encapsulation, interfaces, abstraction, polymorphism
+-Encapsulation, interfaces, abstraction, polymorphism
 
 Day 17 (06/01/26, Tuesday)
-OOP revision + scenarios
+-OOP revision + scenarios
 
 📊 Phase 4: Data Structures
 
 Day 18 (07/01/26, Wednesday)
-Linked List
+->Linked List
 
 Day 19 (08/01/26, Thursday)
 Stack, Queue, HashMap
