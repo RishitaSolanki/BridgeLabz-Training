@@ -33,6 +33,7 @@ Prepare for technical interviews
 📅 Day-wise Training Log
 
 🔰 Phase 1: GitHub & C# Basics
+
 Day 1 (16/12/25, Tuesday)
 GitHub basics, repository creation, branching, kickoff session
 
@@ -58,6 +59,7 @@ Day 8 (24/12/25, Wednesday)
 Methods
 
 🧠 Phase 2: Core C# & OOP
+
 Day 9 (26/12/25, Friday)
 Strings
 
@@ -80,6 +82,7 @@ Day 15 (03/01/26, Saturday)
 Revision
 
 🏗️ Phase 3: Advanced OOP
+
 Day 16 (05/01/26, Monday)
 Encapsulation, interfaces, abstraction, polymorphism
 
@@ -87,6 +90,7 @@ Day 17 (06/01/26, Tuesday)
 OOP revision + scenarios
 
 📊 Phase 4: Data Structures
+
 Day 18 (07/01/26, Wednesday)
 Linked List
 
@@ -103,6 +107,7 @@ Day 22 (13/01/26, Tuesday)
 Algorithm analysis
 
 🧩 Phase 5: Projects & Practice
+
 Day 23 (14/01/26, Wednesday)
 Address Book (start)
 
@@ -116,6 +121,7 @@ Day 26 (17/01/26, Saturday)
 DSA practice
 
 ⚙️ Phase 6: Advanced Concepts
+
 Day 27 (19/01/26, Monday)
 Generics
 
@@ -129,6 +135,7 @@ Day 30 (22/01/26, Thursday)
 Exception handling
 
 🚨 Phase 7: Testing & Reflection
+
 Day 31 (23/01/26, Friday)
 Regex
 
@@ -139,6 +146,7 @@ Day 33 (26/01/26, Monday)
 Reflection
 
 📈 Phase 8: Code Quality & File Handling
+
 Day 34 (27/01/26, Tuesday)
 SonarQube
 
@@ -155,6 +163,7 @@ Day 38 (31/01/26, Saturday)
 Project completion
 
 🧵 Phase 9: Multithreading & Design
+
 Day 39 (02/02/26, Monday)
 Design principles
 
@@ -162,6 +171,7 @@ Day 40 (03/02/26, Tuesday)
 Multithreading
 
 🗄️ Phase 10: DBMS
+
 Day 41 (04/02/26, Wednesday)
 DBMS basics
 
@@ -175,6 +185,7 @@ Day 44 (07/02/26, Saturday)
 Completion
 
 🧪 Phase 11: Exams & Practice
+
 Day 45 (09/02/26, Monday)
 Revision
 
@@ -194,6 +205,7 @@ Day 50 (14/02/26, Saturday)
 Final revision
 
 🌐 Phase 12: Advanced Development
+
 Day 51 (16/02/26, Monday)
 ADO.NET
 
