@@ -1207,11 +1207,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\HealthClinicApp\\HealthClinic\\HealthClinic.csproj",
+      "projectUniqueName": "D:\\BridgeLabz-Training\\DAY4_HealthClinicAppCompletion\\HealthClinicApp\\HealthClinic\\HealthClinic.csproj",
       "projectName": "HealthClinic",
-      "projectPath": "D:\\HealthClinicApp\\HealthClinic\\HealthClinic.csproj",
+      "projectPath": "D:\\BridgeLabz-Training\\DAY4_HealthClinicAppCompletion\\HealthClinicApp\\HealthClinic\\HealthClinic.csproj",
       "packagesPath": "C:\\Users\\rishi_m4zl0ae\\.nuget\\packages\\",
-      "outputPath": "D:\\HealthClinicApp\\HealthClinic\\obj\\",
+      "outputPath": "D:\\BridgeLabz-Training\\DAY4_HealthClinicAppCompletion\\HealthClinicApp\\HealthClinic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1275,5 +1275,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: An attempt was made to access a socket in a way forbidden by its access permissions. (api.nuget.org:443)"
+    }
+  ]
 }

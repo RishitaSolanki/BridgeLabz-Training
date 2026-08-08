@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aaiskbGMrdk=",
+  "dgSpecHash": "SCazAk2S8eo=",
   "success": true,
-  "projectFilePath": "D:\\HealthClinicApp\\HealthClinic\\HealthClinic.csproj",
+  "projectFilePath": "D:\\BridgeLabz-Training\\DAY4_HealthClinicAppCompletion\\HealthClinicApp\\HealthClinic\\HealthClinic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rishi_m4zl0ae\\.nuget\\packages\\microsoft.bcl.cryptography\\8.0.0\\microsoft.bcl.cryptography.8.0.0.nupkg.sha512",
     "C:\\Users\\rishi_m4zl0ae\\.nuget\\packages\\microsoft.data.sqlclient\\7.0.2\\microsoft.data.sqlclient.7.0.2.nupkg.sha512",
@@ -28,5 +28,15 @@
     "C:\\Users\\rishi_m4zl0ae\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.1\\system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
     "C:\\Users\\rishi_m4zl0ae\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: An attempt was made to access a socket in a way forbidden by its access permissions. (api.nuget.org:443)",
+      "projectPath": "D:\\BridgeLabz-Training\\DAY4_HealthClinicAppCompletion\\HealthClinicApp\\HealthClinic\\HealthClinic.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\BridgeLabz-Training\\DAY4_HealthClinicAppCompletion\\HealthClinicApp\\HealthClinic\\HealthClinic.csproj",
+      "targetGraphs": []
+    }
+  ]
 }
