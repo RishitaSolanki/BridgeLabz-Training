@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Greeting Application";
+}
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Greeting App</title>
+<link rel="stylesheet" href="~/css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <h1>Greeting Application</h1>
+
+
+    <h3>What's your name?</h3>
+
+
+    <input type="text"
+           id="name"
+           placeholder="Enter your name">
+
+
+    <br><br>
+
+
+    <button onclick="saveName()">
+        Save Name
+    </button>
+
+
+    <button onclick="submitName()">
+        Submit
+    </button>
+
+
+    <h2 id="result"></h2>
+
+
+
+    <script src="~/js/script.js"></script>
+
+
+</body>
+
+</html>
