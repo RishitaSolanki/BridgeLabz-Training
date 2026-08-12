@@ -272,6 +272,67 @@ Day 53 (18/02/26, Wednesday)
 
 Mock Exam 2 & Project
 
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+***🚀 REFRESHER TRAINING [31 JULY - 28 AUGUST]***
+
+📅 Day 1 — 31/07/2025, Friday
+Topic: DBMS Fundamentals & RDBMS Basics
+* DBMS, SQL Server & T-SQL
+* DDL, DML & RDBMS concepts
+
+📅 Day 2 — 03/08/2025, Monday
+Topic: ER Diagram, Indexing & Normalization
+* ER Diagrams, Relationships & Cardinality
+* Indexing & Normalization
+
+📅 Day 3 — 04/08/2025, Tuesday
+Topic: Joins, Stored Procedures & Triggers
+* SQL Joins
+* Stored Procedures & Triggers
+
+📅 Day 4 — 05/08/2025, Wednesday
+Topic: ADO.NET & Health Clinic App
+* ADO.NET with SQL Server
+* CRUD Operations
+* Health Clinic Console App
+
+📅 Day 5 — 06/08/2025, Thrusday
+Topic: ASP.NET Core, WebAPI & RESTful Services
+* ASP.NET Core WebAPI
+* RESTful Services
+* WebAPI Project Setup
+
+📅 Day 6 — 07/08/2025, Friday
+Topic: MVC Pattern & REST Request Handling
+* MVC Pattern
+* HTTP, Controllers & Routing
+* Greetings App
+
+📅 Day 7 — 10/08/2025, Monday
+Topic: Minimal APIs
+* ASP.NET Core Minimal APIs
+* Contacts App
+
+📅 Day 8 — 11/08/2025, Tuesday
+Topic: H2 Database, Distributed Architecture & SDLC
+* H2 Database & ADO.NET Wrapper
+* Distributed Architecture
+* REST API Testing
+
+📅 Day 9 — 12/08/2025, Wednesday
+Topic: ORM & Entity Framework Fundamentals
+* ORM & Entity Framework
+* Dependency Injection
+* Contacts App with EF
+
+
+
+
 👤 Maintained by 
 
 -> Rishita Solanki 
