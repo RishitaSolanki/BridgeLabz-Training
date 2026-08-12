@@ -281,7 +281,8 @@ Mock Exam 2 & Project
 ***🚀 REFRESHER TRAINING [31 JULY - 28 AUGUST]***
 
 📅 Day 1 — 31/07/2025, Friday
-**Topic: DBMS Fundamentals & RDBMS Basics
+
+Topic: DBMS Fundamentals & RDBMS Basics
 * DBMS, SQL Server & T-SQL
 * DDL, DML & RDBMS concepts
 
