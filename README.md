@@ -339,6 +339,54 @@ Topic: ORM & Entity Framework Fundamentals
 * Dependency Injection
 * Contacts App with EF
 
+📅 Day 10 — 13/08/2025, Thursday
+
+Topic: H2 Database, C# REST API & LINQ to Entities
+* H2 Database with Entity Framework
+* C# REST API with EF
+* LINQ to Entities
+
+📅 Day 11 — 14/08/2025, Friday
+
+Topic: Migrations & DbContext
+* EF Migrations
+* DbContext configuration & lifecycle
+* Backend with EF Migrations
+
+📅 Day 12 — 17/08/2025, Monday
+
+Topic: WebAPI REST Verbs, HttpClient & Action Methods
+* GET, POST, PUT, PATCH & DELETE
+* HttpClient
+* Action Methods
+* Fundoo Notes User Management
+* Started developing FundooApp
+
+
+📅 Day 13 — 18/08/2025, Tuesday
+
+Topic: Dependency Injection, Routing, Reverse Proxy & CORS
+* Dependency Injection
+* Routing & Reverse Proxy
+* CORS
+* Fundoo Notes Authentication & Authorization
+
+📅 Day 14 — 19/08/2025, Wednesday
+
+Topic: JWT, AuthN vs AuthZ, OAuth & SSO
+* JWT based authentication
+* Authentication vs Authorization
+* OAuth & Single Sign-On
+* Fundoo Notes Authentication & Notes Management
+
+📅 Day 15 — 20/08/2025, Thursday
+
+Topic: Entity Framework, CQRS & LINQ
+* Advanced Entity Framework
+* CQRS Design Pattern
+* Advanced LINQ
+* Pin, Archive, Trash, Search & Filter
+
 
 
 
@@ -346,6 +394,6 @@ Topic: ORM & Entity Framework Fundamentals
 
 -> Rishita Solanki 
 
-⭐ Final Note
+**⭐ Final Note**
 
-This repository reflects my consistent learning, strong problem-solving ability, and hands-on development experience throughout the BridgeLabz training journey.
+**This repository reflects my consistent learning, strong problem-solving ability, and hands-on development experience throughout the BridgeLabz training journey.**
